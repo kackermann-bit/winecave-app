@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support – WineCave</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+      color: #1c0a10;
+      line-height: 1.7;
+      font-size: 16px;
+      background: #faf7f4;
+    }
+    h1 { font-size: 28px; font-weight: 700; color: #8b1a2a; margin-bottom: 4px; }
+    h2 { font-size: 18px; font-weight: 700; margin-top: 36px; margin-bottom: 8px; color: #1c0a10; }
+    p  { margin: 8px 0; color: #3a2028; }
+    ul { margin: 8px 0 8px 24px; color: #3a2028; }
+    li { margin-bottom: 6px; }
+    .meta { font-size: 13px; color: #8e6870; margin-bottom: 40px; }
+    a  { color: #8b1a2a; }
+    hr { border: none; border-top: 1px solid #ddd0c8; margin: 40px 0; }
+    .contact-box {
+      background: #8b1a2a;
+      color: white;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 24px 0;
+      text-align: center;
+    }
+    .contact-box a { color: white; font-weight: 700; font-size: 18px; }
+    .faq { background: #fff; border-radius: 10px; padding: 16px 20px; margin-bottom: 10px; border: 1px solid #ddd0c8; }
+    .faq h3 { font-size: 15px; margin: 0 0 6px; color: #1c0a10; }
+    .faq p  { margin: 0; font-size: 14px; }
+
+    /* Modal */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 100;
+      overflow-y: auto;
+    }
+    .modal-overlay.open { display: block; }
+    .modal-box {
+      background: #faf7f4;
+      max-width: 760px;
+      margin: 40px auto;
+      border-radius: 16px;
+      padding: 32px 28px 48px;
+      position: relative;
+    }
+    .modal-close {
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      font-size: 26px;
+      color: #8b1a2a;
+      cursor: pointer;
+      background: none;
+      border: none;
+      line-height: 1;
+    }
+    .highlight {
+      background: #fff;
+      border-left: 4px solid #8b1a2a;
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Support</h1>
+<p class="meta">WineCave App · Wir helfen gerne</p>
+
+<div class="contact-box">
+  <p style="margin:0 0 8px; color:rgba(255,255,255,0.8); font-size:14px;">Bei Fragen oder Problemen erreichst du uns unter</p>
+  <a href="mailto:winecaveapp@gmail.com">winecaveapp@gmail.com</a>
+</div>
+
+<h2>Häufige Fragen</h2>
+
+<div class="faq">
+  <h3>Wie kann ich mein Passwort zurücksetzen?</h3>
+  <p>Tippe auf dem Login-Bildschirm auf "Passwort vergessen?" und gib deine E-Mail-Adresse ein. Du erhältst einen Link per E-Mail.</p>
+</div>
+
+<div class="faq">
+  <h3>Wie lösche ich meinen Account und alle Daten?</h3>
+  <p>Schreib uns eine E-Mail an <a href="mailto:winecaveapp@gmail.com">winecaveapp@gmail.com</a> mit dem Betreff "Account löschen". Wir löschen alle deine Daten innerhalb von 48 Stunden.</p>
+</div>
+
+<div class="faq">
+  <h3>Warum erhalte ich keine Benachrichtigungen?</h3>
+  <p>Überprüfe unter iPhone-Einstellungen → WineCave → Mitteilungen, ob Benachrichtigungen erlaubt sind. Stelle sicher, dass eine Benachrichtigung in der App eingerichtet und aktiviert ist.</p>
+</div>
+
+<div class="faq">
+  <h3>Werden meine Daten gesichert?</h3>
+  <p>Ja. Alle deine Daten werden automatisch in der Cloud gespeichert. Du kannst die App auf einem neuen Gerät installieren und dich mit deinem bestehenden Konto anmelden.</p>
+</div>
+
+<div class="faq">
+  <h3>Die KI-Analyse funktioniert nicht — was tun?</h3>
+  <p>Stelle sicher, dass du mit dem Internet verbunden bist. Falls das Problem weiterhin besteht, kontaktiere uns per E-Mail.</p>
+</div>
+
+<div class="faq">
+  <h3>Wie exportiere ich meine Weinsammlung?</h3>
+  <p>Diese Funktion ist in Entwicklung. Bei dringendem Bedarf kontaktiere uns per E-Mail — wir exportieren deine Daten manuell.</p>
+</div>
+
+<hr>
+
+<h2>Kontakt</h2>
+<p>E-Mail: <a href="mailto:winecaveapp@gmail.com">winecaveapp@gmail.com</a><br>
+Antwortzeit: in der Regel innerhalb von 1–2 Werktagen</p>
+
+<p><a href="#" onclick="document.getElementById('privacyModal').classList.add('open'); return false;">Datenschutzerklärung</a></p>
+
+<hr>
+<p style="font-size: 13px; color: #8e6870;">© 2026 Kilian Ackermann · WineCave App · Liechtenstein</p>
+
+
+<!-- Datenschutzerklärung Modal -->
+<div class="modal-overlay" id="privacyModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="document.getElementById('privacyModal').classList.remove('open')">&times;</button>
+
+    <h1>Datenschutzerklärung</h1>
+    <p class="meta">WineCave App · Zuletzt aktualisiert: Juni 2026</p>
+
+    <div class="highlight">
+      <p>Deine Privatsphäre ist uns wichtig. Diese Datenschutzerklärung erklärt, welche Daten die WineCave-App erhebt, wie sie verwendet werden und welche Rechte du hast.</p>
+    </div>
+
+    <h2>1. Verantwortlicher</h2>
+    <p>
+      Kilian Ackermann<br>
+      Liechtenstein<br>
+      E-Mail: <a href="mailto:winecaveapp@gmail.com">winecaveapp@gmail.com</a>
+    </p>
+
+    <h2>2. Welche Daten werden erhoben?</h2>
+
+    <p><strong>a) Kontodaten</strong></p>
+    <ul>
+      <li>E-Mail-Adresse (für die Registrierung und Anmeldung)</li>
+      <li>Verschlüsseltes Passwort (wird nie im Klartext gespeichert)</li>
+    </ul>
+
+    <p><strong>b) Weinsammlung (von dir eingegeben)</strong></p>
+    <ul>
+      <li>Weinname, Weingut, Jahrgang, Region, Land</li>
+      <li>Kaufpreis, Kaufdatum, Lagerort</li>
+      <li>Persönliche Notizen und Bewertungen</li>
+      <li>Fotos von Weinetiketten (optional)</li>
+      <li>Keller-Einträge (Ein- und Auslagerungen)</li>
+    </ul>
+
+    <p><strong>c) Benachrichtigungen (optional)</strong></p>
+    <ul>
+      <li>Push-Token des Geräts (für Benachrichtigungen)</li>
+      <li>Konfiguration der Benachrichtigungen (Uhrzeit, Typ, Häufigkeit)</li>
+      <li>Empfangene Weinempfehlungen (Verlauf)</li>
+    </ul>
+
+    <p><strong>d) Technische Daten</strong></p>
+    <ul>
+      <li>Geräteplattform (iOS/Android) für die Zustellung von Push-Benachrichtigungen</li>
+      <li>Keine IP-Adressen, keine Standortdaten, keine Tracking-IDs</li>
+    </ul>
+
+    <h2>3. Wozu werden die Daten verwendet?</h2>
+    <ul>
+      <li>Bereitstellung und Synchronisation deiner Weinsammlung auf all deinen Geräten</li>
+      <li>KI-gestützte Weinanalyse und Empfehlungen (deine Weinliste wird dafür an die Anthropic API übermittelt)</li>
+      <li>Automatische Benachrichtigungen zu Weinangeboten gemäss deiner Konfiguration</li>
+      <li>Anzeige von Marktpreisen (Anfragen an wine-searcher.com und wein.cc)</li>
+    </ul>
+
+    <h2>4. Weitergabe an Dritte</h2>
+    <p>Deine Daten werden nicht verkauft. Folgende Drittanbieter werden für den Betrieb der App benötigt:</p>
+    <ul>
+      <li><strong>Supabase</strong> (supabase.com) – Datenbank und Authentifizierung, Server in der EU (Frankfurt)</li>
+      <li><strong>Anthropic</strong> (anthropic.com) – KI-Analyse; es werden nur Weinnamen und -details übermittelt, keine persönlichen Daten</li>
+      <li><strong>Expo / Apple APNs</strong> – Zustellung von Push-Benachrichtigungen</li>
+      <li><strong>wine-searcher.com / wein.cc</strong> – Marktpreisabfragen (nur Weinname und Jahrgang)</li>
+    </ul>
+
+    <h2>5. Speicherung und Sicherheit</h2>
+    <ul>
+      <li>Alle Daten werden auf sicheren Servern in der EU gespeichert (Supabase, Region Frankfurt)</li>
+      <li>Die Verbindung ist SSL/TLS-verschlüsselt</li>
+      <li>Passwörter werden ausschliesslich als bcrypt-Hash gespeichert</li>
+      <li>Daten werden so lange gespeichert, bis du dein Konto löschst</li>
+    </ul>
+
+    <h2>6. Deine Rechte (DSGVO)</h2>
+    <p>Du hast jederzeit das Recht auf:</p>
+    <ul>
+      <li><strong>Auskunft</strong> – welche Daten wir über dich gespeichert haben</li>
+      <li><strong>Berichtigung</strong> – Korrektur falscher Daten</li>
+      <li><strong>Löschung</strong> – vollständige Löschung deines Kontos und aller Daten</li>
+      <li><strong>Datenportabilität</strong> – Export deiner Daten in einem gängigen Format</li>
+      <li><strong>Widerspruch</strong> – gegen die Verarbeitung deiner Daten</li>
+    </ul>
+    <p>Wende dich dafür per E-Mail an: <a href="mailto:winecaveapp@gmail.com">winecaveapp@gmail.com</a></p>
+
+    <h2>7. Kinder</h2>
+    <p>Die App ist nicht für Personen unter 17 Jahren bestimmt und richtet sich ausschliesslich an volljährige Personen. Wir erheben wissentlich keine Daten von Minderjährigen.</p>
+
+    <h2>8. Änderungen dieser Datenschutzerklärung</h2>
+    <p>Bei wesentlichen Änderungen informieren wir dich per E-Mail oder In-App-Benachrichtigung. Die jeweils aktuelle Version ist immer auf dieser Seite verfügbar.</p>
+
+    <h2>9. Kontakt</h2>
+    <p>
+      Bei Fragen zum Datenschutz erreichst du uns unter:<br>
+      <a href="mailto:winecaveapp@gmail.com">winecaveapp@gmail.com</a>
+    </p>
+
+    <hr>
+    <p style="font-size: 13px; color: #8e6870;">© 2026 Kilian Ackermann · WineCave App · Liechtenstein</p>
+  </div>
+</div>
+
+</body>
+</html>
