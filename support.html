@@ -116,6 +116,26 @@
   <p>Diese Funktion ist in Entwicklung. Bei dringendem Bedarf kontaktiere uns per E-Mail — wir exportieren deine Daten manuell.</p>
 </div>
 
+<div class="faq">
+  <h3>Was ist WineCave Pro?</h3>
+  <p>WineCave Pro ist das kostenpflichtige Abonnement mit allen Features: unlimitierte Weinsammlung, KI-Sommelier, Auktionsanalyse, automatische Benachrichtigungen, Etikett-Scan und Watchlist. Ohne Pro kannst du bis zu 25 Weine kostenlos verwalten.</p>
+</div>
+
+<div class="faq">
+  <h3>Wie kann ich WineCave Pro abonnieren?</h3>
+  <p>Tippe auf «Jetzt upgraden» in der App oder auf den Paywall-Bildschirm, der beim Erreichen der Gratis-Limits erscheint. Du kannst zwischen Monats- (CHF 5.99) und Jahresabo (CHF 39.99) wählen. Beide beinhalten 7 Tage gratis Testphase.</p>
+</div>
+
+<div class="faq">
+  <h3>Wie kündige ich mein Abo?</h3>
+  <p>Das Abo wird über den Apple App Store verwaltet. Gehe zu iPhone-Einstellungen → dein Name → Abonnements → WineCave und tippe auf «Abonnement kündigen». Das Abo läuft bis zum Ende der bezahlten Periode weiter.</p>
+</div>
+
+<div class="faq">
+  <h3>Wie kann ich ein bestehendes Abo wiederherstellen?</h3>
+  <p>Tippe in der App auf «Kauf wiederherstellen» auf dem Paywall-Bildschirm oder in den Einstellungen. Du musst mit derselben Apple-ID angemeldet sein, mit der du das Abo gekauft hast.</p>
+</div>
+
 <hr>
 
 <h2>Kontakt</h2>
@@ -182,16 +202,17 @@ Antwortzeit: in der Regel innerhalb von 1–2 Werktagen</p>
       <li>Bereitstellung und Synchronisation deiner Weinsammlung auf all deinen Geräten</li>
       <li>KI-gestützte Weinanalyse und Empfehlungen (deine Weinliste wird dafür an die Anthropic API übermittelt)</li>
       <li>Automatische Benachrichtigungen zu Weinangeboten gemäss deiner Konfiguration</li>
-      <li>Anzeige von Marktpreisen (Anfragen an wine-searcher.com und wein.cc)</li>
+      <li>Anzeige von Marktpreisen (Weinnamen werden an Vivino und die Anthropic Web-Suche übermittelt)</li>
     </ul>
 
     <h2>4. Weitergabe an Dritte</h2>
     <p>Deine Daten werden nicht verkauft. Folgende Drittanbieter werden für den Betrieb der App benötigt:</p>
     <ul>
       <li><strong>Supabase</strong> (supabase.com) – Datenbank und Authentifizierung, Server in der EU (Frankfurt)</li>
-      <li><strong>Anthropic</strong> (anthropic.com) – KI-Analyse; es werden nur Weinnamen und -details übermittelt, keine persönlichen Daten</li>
+      <li><strong>Anthropic</strong> (anthropic.com) – KI-Analyse, Sommelier-Funktion und Marktpreis-Websuche; es werden nur Weinnamen und -details übermittelt, keine persönlichen Daten</li>
       <li><strong>Expo / Apple APNs</strong> – Zustellung von Push-Benachrichtigungen</li>
-      <li><strong>wine-searcher.com / wein.cc</strong> – Marktpreisabfragen (nur Weinname und Jahrgang)</li>
+      <li><strong>Vivino</strong> (vivino.com) – Marktpreisabfragen über die öffentliche API (nur Weinname und Jahrgang)</li>
+      <li><strong>RevenueCat</strong> (revenuecat.com) – Verwaltung von In-App-Abonnements; es werden keine persönlichen Daten, sondern nur anonyme Kauf-IDs übermittelt</li>
     </ul>
 
     <h2>5. Speicherung und Sicherheit</h2>
